@@ -1,22 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="main-header">
-        <ul class="main-header__list">
-            <li class="main-header__item main-header__item--logo"><img class="logo" src="./assets/logo-horizontal.svg" alt=""></li>
-            <li class="main-header__item"><button class="button">EN</button></li>
-            <li class="main-header__item"><a class="button" href="#">Donate now</a></li>
-        </ul>
+      <ul class="main-header__list">
+        <li class="main-header__item main-header__item--logo">
+          <img class="logo" src="./assets/logo-horizontal.svg" alt="" />
+        </li>
+        <li class="main-header__item">
+          <button class="lang">
+            <img class="lang__icon" src="./assets/translate.svg" alt="" /><span
+              class="lang__text"
+              >EN</span
+            >
+          </button>
+        </li>
+        <li class="main-header__item">
+          <a class="button button--red" href="#">
+            <img class="button__icon" src="./assets/lock.svg" alt="" />
+            <span class="button__text">Donate now</span>
+          </a>
+        </li>
+      </ul>
     </header>
-</body>
+    <main>
+        <header class="sub-header">
+            <ul class="sub-header__list">
+                <li class="sub-header__item sub-header__item--hover sub-header__item--first-item">Our Work</li>
+                <li class="sub-header__item sub-header__item--hover">Support Wikipedia</li>
+                <li class="sub-header__item sub-header__item--hover">Research</li>
+                <li class="sub-header__item sub-header__item--hover">Advocacy</li>
+                <li class="sub-header__item sub-header__item--hover">Technology</li>
+                <li class="sub-header__item sub-header__item--hover">News</li>
+                <li class="sub-header__item sub-header__item--hover">Participate</li>
+                <li class="sub-header__item sub-header__item--hover">About</li>
+                <li class="sub-header__item sub-header__item--last-item"><div class="search"><Input class="search__input" placeholder="Search Site" /> <img class="search__icon" src="./assets/search.svg" alt=""></div></li>
+            </ul>
+        </header>
+        <section class="hero">
+            <div class="hero__text-wrapper">
+               <p class="hero__text">Imagine a world in which every single human being can freely share in the sum of all knowledge.</p> 
+            </div>
+        </section>
+        <section class="about">
+            <p class="about__section about__text">The nonprofit Wikimedia Foundation provides the essential infrastructure for free knowledge. We host Wikipedia, the free online encyclopedia, created, edited, and verified by volunteers around the world, as well as many other vital community projects. All of which is made possible thanks to donations from individuals like you. We welcome anyone who shares our vision to join us in collecting and sharing knowledge that fully represents human diversity.</p>
+            <div class="about__section">
+                <h3 class="about__header">Protect and sustain Wikipedia</h3>
+                <a class="button button--purple" href="#">
+                    <img class="button__icon" src="./assets/lock.svg" alt="" />
+                    <span class="button__text">Donate now</span>
+                </a>
+                <p class="about__small-text">Donations are secure</p>
+            </div>
+        </section>
+    </main>
+  </body>
 </html>
