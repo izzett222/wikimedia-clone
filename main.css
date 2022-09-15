@@ -1,0 +1,29 @@
+. {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%
+}
+.main-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-header__list {
+    width: 980px;
+    border-bottom: 2px solid black;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.main-header__item {
+    display: block;
+}
+.main-header__item--logo {
+    margin-right: auto;
+}
+.logo {
+    width: 144px;
+}
